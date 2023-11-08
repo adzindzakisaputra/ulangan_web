@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS untuk mengatur tampilan teks */
+        .output {
+            font-size: 18px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Perulangan Anak Ayam</h1>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        // JavaScript untuk melakukan perulangan
+        var outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = ""; // Mengosongkan output sebelum memulai
+
+        for (var i = 10; i >= 1; i--) {
+            var text = "Anak ayam turun " + i;
+            var p = document.createElement("p");
+            p.textContent = text;
+            outputDiv.appendChild(p);
+        }
+    </script>
+</body>
+</html>

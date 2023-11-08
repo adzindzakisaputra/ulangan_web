@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Warna Persegi</title>
+    <style>
+        #square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="square"></div>
+    <button onclick="ubahWarna()">Ubah Warna</button>
+    <script>
+        function ubahWarna() {
+            var square = document.getElementById('square');
+            if (square.style.backgroundColor === 'red' || square.style.backgroundColor === '') {
+                square.style.backgroundColor = 'blue';
+            } else {
+                square.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+</html>
